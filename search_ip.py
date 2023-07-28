@@ -1,3 +1,4 @@
+# Script to search for any IPs occurence in every files in a directory
 import os
 import re
 
