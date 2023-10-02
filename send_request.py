@@ -1,4 +1,5 @@
 import socket # permet de travailler avec des sockets, qui sont des points de communication permettant d'établir des connexions réseau.
+import requests
 
 Rhost = "127.0.0.1" # IP de la cible
 Directory = ".ssh"
