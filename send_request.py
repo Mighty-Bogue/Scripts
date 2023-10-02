@@ -1,12 +1,15 @@
 import socket # permet de travailler avec des sockets, qui sont des points de communication permettant d'établir des connexions réseau.
 
-Rhost = "127.0.0.1" # IP de la cible
-Directory = ".ssh"
-Rport = 80 # Port de la cible
+print('Enter target IP')
+Rhost = input() # IP de la cible
+print('Enter target Directory')
+Directory = input()
+print('Enter target Port')
+Rport = input() # Port de la cible
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Création du socket
 
 # Connexion vers la cible
-socket.connect((Rhost,Rport))  
+socket.connect((Rhost,int(Rport))) 
 
 # Datas envoyées
 request = "GET /%s/ HTTP/1.1\r\nHost:%s\r\n\r\n" % (Directory, Rhost)
