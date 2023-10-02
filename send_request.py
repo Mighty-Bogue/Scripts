@@ -1,6 +1,7 @@
 import socket # permet de travailler avec des sockets, qui sont des points de communication permettant d'établir des connexions réseau.
 
 Rhost = "127.0.0.1" # IP de la cible
+Directory = ".ssh"
 Rport = 80 # Port de la cible
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Création du socket
 
@@ -8,7 +9,7 @@ socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Création du socket
 socket.connect((Rhost,Rport))  
 
 # Datas envoyées
-request = "GET / HTTP/1.1\r\nHost:%s\r\n\r\n" % Rhost
+request = "GET /%s HTTP/1.1\r\nHost:%s\r\n\r\n" % (Directory, Rhost)
 socket.send(request.encode()) # Utilise la méthode send de l'objet socket, qui est une socket réseau. La méthode encode() est utilisée pour convertir la chaîne de caractères request en une séquence d'octets, car les sockets envoient des données sous forme d'octets.
 print("data sent:\r\n"+request)
 
