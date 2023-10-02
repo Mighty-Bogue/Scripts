@@ -3,7 +3,7 @@ import socket # permet de travailler avec des sockets, qui sont des points de co
 print('Enter target IP')
 Rhost = input() # IP de la cible
 print('Enter target Directory')
-Directory = input()
+Directory = input() # Répertoire de la cible
 print('Enter target Port')
 Rport = input() # Port de la cible
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Création du socket
