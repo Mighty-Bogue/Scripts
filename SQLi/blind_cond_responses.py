@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# MySQL Blind SQLI with Conditional Response
+# MySQL Blind SQLI with Conditional Responses
 # Tested on PortSwigger lab "Blind SQL injection with conditional responses"
 
 import sys # Provides access to system functions, including command line argument
