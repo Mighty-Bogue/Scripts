@@ -8,21 +8,6 @@ import requests # Facilitates HTTP requests to web servers, enabling interaction
 import urllib # Used to encode data in URLs, thus preventing errors and security problems during HTTP requests.
 import urllib3 # HTTP request management, including connection management and security warnings
 
-signature = """
-Blind SQLI with Conditional Responses
-by
-
-#   #    #    #####  #   #  #   #    #      ####  #   #
-#  #    # #   #   #  ## ##  #   #   # #    #      #  #
-# #    #   #  #   #  # # #  #   #  #   #  #       # #
-##     #####  #####  # # #  #####  #####  #       ##
-# #    #   #  # #    #   #  #   #  #   #  #       # #
-#  #   #   #  #  #   #   #  #   #  #   #   #      #  #
-#   #  #   #  #   #  #   #  #   #  #   #    ####  #   # 
-"""
-
-print(signature)
-
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) # Disables warnings related to insecure HTTP requests (HTTP)
 
 proxies = {'http': 'http://127.0.0.1:8080', 'https': 'http://127.0.0.1:8080'} # To send the requests through Burp
