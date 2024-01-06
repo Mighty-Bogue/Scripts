@@ -3,6 +3,11 @@ import sys
 # Importation du module requests pour effectuer des requêtes HTTP.
 import requests
 
+# Vérifier si le nombre d'arguments est insuffisant
+if len(sys.argv) < 3:
+    print("Usage: python script_name.py <wordlist> <domain>")
+    sys.exit(1)
+    
 # Ouverture et lecture du fichier wordlist passé en premier argument de la ligne de commande.
 # La méthode .read() lit tout le contenu du fichier et le stocke dans la variable wordlist.
 wordlist = open(sys.argv[1]).read()
