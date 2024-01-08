@@ -1,5 +1,5 @@
 ## Cas d'une SQL injection UNION attacks sur MySQL
-*L'objectif est de résumé les étapes d'une SQLi UNION en simplifiant le plus possible*
+*L'objectif est de résumer les étapes d'une SQLi UNION en simplifiant le plus possible*
 
 ### 1. Nombre de colonne
 ' ORDER by 1
